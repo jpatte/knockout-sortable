@@ -36,6 +36,7 @@ Note: The sortable binding assumes that the child "templates" have a single cont
     * `arg.targetIndex` - the position of the item in the destination observableArray
     * `arg.targetParent` - the destination observableArray
     * `arg.cancelDrop` - this defaults to false and can be set to true to indicate that the drop should be cancelled.
+    * `arg.afterCancel` - specify a function to execute after the drop was cancelled. This function receives the same arguments as beforeMove.
 
     This option can be passed in the binding or configured globally by setting `ko.bindingHandlers.sortable.beforeMove`.  This callback also receives the `event` and `ui` objects as the second and third arguments.
 

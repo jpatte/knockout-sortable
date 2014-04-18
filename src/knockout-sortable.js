@@ -197,6 +197,9 @@
                                         $(el).remove();
                                     }
 
+                                    if (arg.afterCancel)
+                                    	arg.afterCancel.call(this, arg, event, ui);
+
                                     return;
                                 }
                             }
